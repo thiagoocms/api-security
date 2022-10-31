@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SeguranApplication<seguran>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.apisegura.seguran.SeguranApplication",
+            "projectName": "seguran",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
