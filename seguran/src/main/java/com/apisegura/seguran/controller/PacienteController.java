@@ -16,7 +16,7 @@ import com.apisegura.seguran.model.Paciente;
 import com.apisegura.seguran.service.PacienteService;
 
 @RestController
-@RequestMapping("/api/Pacientes")
+@RequestMapping("/api/pacientes")
 public class PacienteController {
 
     @Autowired

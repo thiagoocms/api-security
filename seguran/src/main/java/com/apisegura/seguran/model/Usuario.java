@@ -20,7 +20,7 @@ public class Usuario implements UserDetails{
 
     @Id 
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "generator_usuario")
-    private long id;
+    private Long id;
 
     @Column(nullable = false)
     private String name;
@@ -40,14 +40,14 @@ public class Usuario implements UserDetails{
         this.senha = senha;
     }
 
-    public Usuario(long id, String name, String email, String senha) {
+    public Usuario(Long id, String name, String email, String senha) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.senha = senha;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

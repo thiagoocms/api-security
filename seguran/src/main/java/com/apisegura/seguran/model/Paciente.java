@@ -23,6 +23,9 @@ public class Paciente {
 
     private Date createdAt;
 
+    public Paciente() {
+    }
+
     public Paciente(String nome, String healthInsuranceCardId, String address, Date createdAt) {
         this.nome = nome;
         this.healthInsuranceCardId = healthInsuranceCardId;
