@@ -19,13 +19,13 @@ import com.apisegura.seguran.view.model.usuario.LoginResponse;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/api/usuarios")
 public class UsuarioController {
 
     @Autowired
     private UsuarioService servicoUsuario;
 
-    @GetMapping("/")
+    @GetMapping("")
     public List<Usuario> obterTodos(){
         return servicoUsuario.obterTodos();
     }
@@ -35,7 +35,7 @@ public class UsuarioController {
         return servicoUsuario.obterPorId(id);
     }
 
-    @PostMapping("/")
+    @PostMapping("")
     public Usuario adicionar(@RequestBody Usuario usuario){
         return servicoUsuario.adicionar(usuario);
     }

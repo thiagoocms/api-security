@@ -22,7 +22,7 @@ public class PacienteController {
     @Autowired
     private PacienteService servicoPaciente;
 
-    @GetMapping("/")
+    @GetMapping("")
     public List<Paciente> obterTodos(){
         return servicoPaciente.obterTodos();
     }
@@ -32,7 +32,7 @@ public class PacienteController {
         return servicoPaciente.obterPorId(id);
     }
 
-    @PostMapping("/")
+    @PostMapping("")
     public Paciente adicionar(@RequestBody Paciente paciente){
         return servicoPaciente.adicionar(paciente);
     }

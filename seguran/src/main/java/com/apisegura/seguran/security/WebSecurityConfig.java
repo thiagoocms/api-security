@@ -68,7 +68,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 Daqui pra baixo é onde nos vamos futucar e fazer nossas validações.
                 Aqui vamos informar as rotas que não vão precisar de autenticação.
             */
-            .antMatchers(HttpMethod.POST, "/usuarios", "/usuarios/**","/usuarios/login","/" )
+            .antMatchers(HttpMethod.POST, "/api/usuarios","/api/usuarios/login" )
 			.permitAll() // informa que todos podem acessar, não precisa de autenticação.
             
             .antMatchers(HttpMethod.GET, "/api/pacientes","/api/pacientes/**" )

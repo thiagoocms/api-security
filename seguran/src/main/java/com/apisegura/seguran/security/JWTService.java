@@ -19,11 +19,6 @@ public class JWTService {
     // Chave secreta utilizada pelo JWT para codificar e decodificar o token.
     private static final String chavaPrivadaJWT = "secretKey";
 
-    /**
-     * Metodo para gerar o token JWT.
-     * @param authentication Autenticação do usuario.
-     * @return Token.
-     */
     public String gerarToken(Authentication authentication){
 
         // 1 Dia em milliseconds
