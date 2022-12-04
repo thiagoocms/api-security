@@ -1,0 +1,15 @@
+
+.btn{
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+a > i{
+  margin-right: 15px;
+}
+.edit{
+  color: yellow;
+}
+.delete{
+  color: red;
+}

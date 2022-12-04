@@ -1,0 +1,25 @@
+<div class="container">
+  <header> login </header>
+  <form action="" method="post" (ngSubmit)="login()" >
+
+
+        <mat-form-field class="field">
+          <mat-icon matIconPrefix>email</mat-icon>
+          <mat-label >email</mat-label>
+          <input matInput [(ngModel)]="usuario.email" name="email">
+        </mat-form-field>
+<br>
+        <mat-form-field class="field">
+          <mat-icon matIconPrefix>lock</mat-icon>
+          <mat-label >senha</mat-label>
+          <input matInput [(ngModel)]="usuario.senha" name="senha">
+        </mat-form-field>
+
+      <br>
+      <button mat-raised-button class="button"  type="submit">Entrar</button>
+
+
+  </form>
+</div>
+
+

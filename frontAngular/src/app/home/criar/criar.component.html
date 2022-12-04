@@ -1,0 +1,27 @@
+<div class="container">
+  <form action="" method="post" (ngSubmit)="add()">
+    <mat-form-field class="field">
+      <mat-icon matIconPrefix>person_add</mat-icon>
+      <mat-label >Nome</mat-label>
+      <input matInput [(ngModel)]=" paciente.nome" name="nome">
+    </mat-form-field>
+<br>
+    <mat-form-field class="field">
+      <mat-icon matIconPrefix>add_card</mat-icon>
+      <mat-label >n° do cartão</mat-label>
+      <input matInput [(ngModel)]="paciente.healthInsuranceCardId" name="healthInsuranceCardId">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="field">
+      <mat-icon matIconPrefix>add_location</mat-icon>
+      <mat-label >Endereço</mat-label>
+      <input matInput [(ngModel)]="paciente.address" name="address">
+    </mat-form-field>
+    <br>
+
+    <button mat-raised-button (click)="voltar()" class="btn">voltar</button>
+    <button mat-raised-button type="submit" class="btn b">criar</button>
+    </form>
+</div>
+
+
